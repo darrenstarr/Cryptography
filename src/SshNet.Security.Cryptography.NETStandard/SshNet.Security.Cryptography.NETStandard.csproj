@@ -20,5 +20,9 @@
   <PropertyGroup Condition=" '$(TargetFramework)' == 'netstandard2.0' ">
     <DefineConstants>$(DefineConstants);FEATURE_CRYPTO_HASHALGORITHM</DefineConstants>
   </PropertyGroup>
-  <Import Project="..\SshNet.Security.Cryptography.Shared\SshNet.Security.Cryptography.Shared.projitems" Label="Shared" />
+  <ItemGroup>
+    <Compile Include="..\SshNet.Security.Cryptography.Shared\**\*.cs" Exclude="..\SshNet.Security.Cryptography.Shared\Properties\CommonAssemblyInfo.cs">
+      <Link>%(RecursiveDir)%(Filename)%(Extension)</Link>
+    </Compile>
+  </ItemGroup>
 </Project>
