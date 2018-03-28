@@ -3,7 +3,7 @@ configuration: Release
 
 dotnet_csproj:
   patch: true
-  file: '**\*.csproj'
+  file: 'src\SshNet.Security.Cryptography.NETStandard\SshNet.Security.Cryptography.NETStandard.csproj'
   version: '{version}'
   package_version: '{version}'
   assembly_version: '{version}'
@@ -22,6 +22,5 @@ artifacts:
   
 deploy:
 - provider: NuGet
-  symbol_server: https://ci.appveyor.com/nuget/cryptography-0fk32aa0x6l1/api/v2/package
   api_key:
     secure: oy2autf4eceucss6vcsal4yby6emu2yezf3irnsctoyxxu
