@@ -24,4 +24,4 @@ deploy:
 - provider: NuGet
   symbol_server: https://ci.appveyor.com/nuget/cryptography-0fk32aa0x6l1/api/v2/package
   api_key:
-    secure: oy2ncv4azpth5strcrfqlnnxlptivu4u5kdqtjcpcwq2f4
+    secure: oy2autf4eceucss6vcsal4yby6emu2yezf3irnsctoyxxu
