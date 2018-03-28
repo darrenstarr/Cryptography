@@ -12,15 +12,15 @@ dotnet_csproj:
 
 # scripts to run before build
 before_build:
-  - dotnet restore
+  - dotnet restore .\src\SshNet.Security.Cryptography.NETStandard\SshNet.Security.Cryptography.NETStandard.csproj
 
 build_script:
-  - dotnet build .\src\Renci.SshNet.NetCore\Renci.SshNet.NETCore.csproj
+  - dotnet build .\src\SshNet.Security.Cryptography.NETStandard\SshNet.Security.Cryptography.NETStandard.csproj
 
 artifacts:
-  - path: ./src\SshNet.Security.Cryptography.NETStandard\bin\Release\*.nupkg
+  - path: src\SshNet.Security.Cryptography.NETStandard\bin\Release\*.nupkg
   
 deploy:
 - provider: NuGet
   api_key:
-    secure: 078KmfOy1mx+V/EMAMg8repid/YclWiJ5l0gion45rUojxExaTHZ6EYB2e28VVtL
+    secure: oy2ncv4azpth5strcrfqlnnxlptivu4u5kdqtjcpcwq2f4
