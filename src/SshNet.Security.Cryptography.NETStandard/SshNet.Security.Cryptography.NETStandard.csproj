@@ -7,6 +7,9 @@
     <SignAssembly>true</SignAssembly>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>0.0.2</Version>
+    <Description>Cryptographic functions for .NET for VtConnect, part of VtNetCore</Description>
+    <Copyright>Copyright � Renci 2010-2017</Copyright>
     <PackageId>VtNetConnect.SshNet.Security.Cryptography</PackageId>
     <Authors>Renci</Authors>
     <PackageProjectUrl>https://github.com/sshnet/Cryptography/</PackageProjectUrl>
