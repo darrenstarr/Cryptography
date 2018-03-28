@@ -19,8 +19,6 @@ build_script:
 
 artifacts:
   - path: src\SshNet.Security.Cryptography.NETStandard\bin\Release\*.nupkg
-  
-deploy:
-- provider: NuGet
-  api_key:
-    secure: oy2autf4eceucss6vcsal4yby6emu2yezf3irnsctoyxxu
+
+deploy_script:
+  dotnet nuget push .\src\SshNet.Security.Cryptography.NETStandard\bin\Release\*.nupkg -k oy2mp472ghpxywo4x7qqysbodvdoesauld5lvq6fjxyqqq -s https://api.nuget.org/v3/index.json
