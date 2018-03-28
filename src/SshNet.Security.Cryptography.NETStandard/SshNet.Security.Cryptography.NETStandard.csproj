@@ -6,6 +6,12 @@
     <AssemblyOriginatorKeyFile>../SshNet.Security.Cryptography.snk</AssemblyOriginatorKeyFile>
     <SignAssembly>true</SignAssembly>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>VtNetConnect.SshNet.Security.Cryptography</PackageId>
+    <Authors>Renci</Authors>
+    <PackageProjectUrl>https://github.com/sshnet/Cryptography/</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/sshnet/Cryptography/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageTags>crypto</PackageTags>
   </PropertyGroup>
   <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard1.0' ">
     <PackageReference Include="System.IO" Version="4.3.0" />
